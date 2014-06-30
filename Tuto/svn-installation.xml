@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tutorial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://leanforge.dev/tutorial https://github.com/HugoPoi/LeanForge/raw/master/xsd/tutotialschema.xsd">
+  <meta>
+    <software id="maven">
+      <name><![CDATA[Subversion]]></name>
+      <website href="http://subversion.apache.org"><![CDATA[Apache Subversion]]></website>
+    </software>
+    <languages>
+      <codinglang>java</codinglang>
+    </languages>
+    <plateforms>linux-ubuntu</plateforms>
+    <categories>
+      <category>build</category>
+    </categories>
+    <keywords><![CDATA[subversion,installation,svn]]></keywords>
+  </meta>
+  <content lang="fr-FR">
+    
+    <title><![CDATA[Installation de Subversion]]></title>
+    
+    <step name="First Step">
+      
+      <substep><![CDATA[
+        <h1>Le serveur</h1>
+      ]]>
+      </substep>
+      
+      <substep><![CDATA[
+        <h2>Utilitaire</h2>
+
+        Deux types de serveurs subversion sont disponibles actuellement :<br>
+        
+        <li>svnserve est un serveur léger qui utilise un protocole TCP/IP spécifique. Il est destiné aux petites installations ou lorsqu'un serveur complet Apache ne peut pas être utilisé. Il utilise par défaut une authentification par un fichier contenant des noms d'utilisateur et leur mot de passe mais peut également être utilisé avec le protocole Simple Authentication and Security Layer (SASL). On peut également utiliser une connexion sécurisée SSH avec svnserve.</li>
+        
+        <li>Serveur HTTP d'Apache. Dans ce cas les dépôts sont rendus accessibles aux clients via l'installation d'un module WebDAV. L'utilisation du protocole SSL permet de sécuriser la transmission via l'Internet. Dans le cas d'un grand nombre d'utilisateurs, le protocole SSH peut être plus contraignant et moins sécurisé puisqu'il crée des utilisateurs de plein droit sur le serveur hôte. Un des avantages de la solution HTTP d'Apache malgré sa lourdeur d'installation et sa réactivité plus lente que Svnserve est la possibilité de tracer les connexions des clients.</li>
+        
+      ]]>
+      </substep>
+
+      <substep><![CDATA[
+        <h2>Installation</h2>
+
+
+
+      ]]>
+      </substep>
+
+    </step>
+
+    <step name="Second Step">
+      <substep><![CDATA[
+        Go to the configuration menu
+      ]]></substep>
+      <substep><![CDATA[
+        Configure this settings : .
+      ]]></substep>
+      <substep><![CDATA[
+        Then click on start button.
+      ]]></substep>
+    </step>
+  </content>
+</tutorial>
