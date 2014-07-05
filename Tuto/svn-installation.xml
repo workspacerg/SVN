@@ -8,9 +8,9 @@
     <languages>
       <codinglang>java</codinglang>
     </languages>
-    <plateforms>linux-ubuntu</plateforms>
+    <plateforms>Linux-Ubuntu</plateforms>
     <categories>
-      <category>build</category>
+      <category>Build</category>
     </categories>
     <keywords><![CDATA[subversion,installation,svn]]></keywords>
   </meta>
@@ -30,7 +30,7 @@
 
         Deux types de serveurs subversion sont disponibles actuellement :<br>
         
-        <li>svnserve est un serveur léger qui utilise un protocole TCP/IP spécifique. Il est destiné aux petites installations ou lorsqu'un serveur complet Apache ne peut pas être utilisé. Il utilise par défaut une authentification par un fichier contenant des noms d'utilisateur et leur mot de passe mais peut également être utilisé avec le protocole Simple Authentication and Security Layer (SASL). On peut également utiliser une connexion sécurisée SSH avec svnserve.</li>
+        <li>svnserve est un serveur léger qui utilise un protocole TCP/IP spécifique. Il est destiné aux petites installations ou lorsqu'un serveur complet Apache ne peut pas être utilisé. Il utilise par défaut une authentification par un fichier contenant des noms d'utilisateurs et leur mot de passe mais peut également être utilisé avec le protocole Simple Authentication and Security Layer (SASL). On peut également utiliser une connexion sécurisée SSH avec svnserve.</li>
         
         <li>Serveur HTTP d'Apache. Dans ce cas les dépôts sont rendus accessibles aux clients via l'installation d'un module WebDAV. L'utilisation du protocole SSL permet de sécuriser la transmission via l'Internet. Dans le cas d'un grand nombre d'utilisateurs, le protocole SSH peut être plus contraignant et moins sécurisé puisqu'il crée des utilisateurs de plein droit sur le serveur hôte. Un des avantages de la solution HTTP d'Apache malgré sa lourdeur d'installation et sa réactivité plus lente que Svnserve est la possibilité de tracer les connexions des clients.</li>
         
