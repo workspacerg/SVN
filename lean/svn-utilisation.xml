@@ -24,11 +24,11 @@
         <h2>Principe de fonctionnement</h2>
 
         <p>
-          Comme on l&apos;a vue depuis le début SVN est un outils de versionning. Le principe est assez simple, un serveur stocke les différentes version de votre projet. Chaque utilisateur recupère une copie du projet sur lequels il travail puis renvoie les modification sur le serveur accompagné d&apos;un message d&apos;explication sur les modifications. 
+          Comme on l&apos;a vu depuis le début SVN est un outil de versionning. Le principe est assez simple, un serveur stocke les différentes versions de votre projet. Chaque utilisateur recupère une copie du projet sur lequel il travaille, puis il renvoie les modifications sur le serveur accompagné d&apos;un message d&apos;explication sur les modifications qu'il a fait. 
         </p>
 
         <p>
-          Dans cette partie nous allons voir comment utiliser SVN de manière classqiue ainsi que quelques astuces plus pousser. Que ce soit en ligne de commande (aussi bien installer sur windows que sur linux) qu'avec l&apos;interface graphique tortoise.
+          Dans cette partie, nous allons voir comment utiliser SVN de manière classique que ce soit en ligne de commande (aussi bien installer sur windows que sur linux) qu'avec l&apos;interface graphique tortoise. Nous vous donnerons également quelques fonctionnalités plus pousséés.
         </p>
 
       ]]></text>
@@ -48,13 +48,13 @@
         <h2>Récupérer un projet</h2>
 
         <p>
-          Avant de pouvoir utilisé votre projet il faut crée une copie de la version serveur. On appel ca un checkout.
+          Avant de pouvoir utiliser votre projet, il faut créer une copie de la version serveur. On appelle cela un checkout.
         </p>
 
         <h3>Tortoise</h3>
 
         <p>
-          Avec tortoise le menu SVN Checkout vous ouvre une boite de dialogue dans laquel renseigné.
+          Avec tortoise, le menu SVN Checkout vous ouvre une boite de dialogue dans laquelle renseigner :
         </p>
 
         <ul>
@@ -71,13 +71,13 @@
           <substep><text><![CDATA[
 
         <p>
-          Un nom d&apos;utilisateur et un mot de passe sera demander si vous avez choisie de mettre une sécurité des comptes.
+          Un nom d&apos;utilisateur et un mot de passe sera demandé si vous avez choisi de mettre une sécurité des comptes.
         </p>
 
-        <h3>Linge de commande</h3>
+        <h3>Ligne de commande</h3>
 
         <p>
-          En ligne de commande mettez vous dans le repertoire ou vous souhaitez importer votre projet puis utiliser la commande suivante:
+          En ligne de commande, mettez-vous dans le repertoire ou vous souhaitez importer votre projet puis utilisez la commande suivante:
         </p>
 
         <p>
@@ -87,7 +87,7 @@
         </p>
 
         <p>
-          Si vous avez spécifié des droits d&apos;utilisateur récupérez le projet avec cette commande : 
+          Si vous avez spécifié des droits d&apos;utilisateurs, récupérez le projet avec cette commande : 
         </p>
 
         <p>
@@ -97,12 +97,12 @@
         </p>
 
 
-        <h2>Ajouté ou supprimé des fichiers ou dossier</h2>
+        <h2>Ajouter ou supprimer des fichiers ou dossiers</h2>
 
         <h3>Tortoise</h3>
 
         <p>
-          Pour ajouter un dossier ou document à l&apos;index un clique droit, tortoise puis add : 
+          Pour ajouter un dossier ou document à l&apos;index, appuyez sur le clique droit de la souris, tortoise puis add : 
         </p>
 
          ]]></text>
@@ -114,7 +114,7 @@
           <substep><text><![CDATA[
 
         <p>
-          Pour supprimer un dossier ou document à l&apos;index un clique droit, tortoise puis Delete : 
+          Pour supprimer un dossier ou un document à l&apos;index, appuyez sur le clique droit de la souris, tortoise puis Delete : 
         </p>
 
          ]]></text>
@@ -128,7 +128,7 @@
         <h3>Ligne de commande</h3>
 
         <p>
-          Pour ajouter des documents en ligne de commande il suffit d&apos;etre dans le repertoire contenant le fichier et faire le commande:
+          Pour ajouter des documents en ligne de commande, il suffit d&apos;être dans le repertoire contenant le fichier et faire la commande:
         </p>
 
         <p>
@@ -139,7 +139,7 @@
         </p>
 
         <p>
-          Par defaut quand on ajoute un repertoire l&apos;ensemble des sous dossier et fichier sont ajouté à l&apos;index. Pour ajouter un dossier sans son contenue : 
+          Par defaut quand on ajoute un repertoire, l&apos;ensemble des sous-dossiers et fichiers sont ajoutés à l&apos;index. Pour ajouter un dossier sans son contenu: 
         </p>
 
         <p>
@@ -172,7 +172,7 @@
         <h2>Récupérer la dernière version d&apos;un projet</h2>
 
         <p>
-          Avant toute modification, vous devez afin d&apos;éviter un maximum de conflit télécharger la derniere versions du projet grâce à la commande 
+          Avant n'importe quelle modification, vous devez afin d&apos;éviter un maximum de conflit télécharger la derniere version du projet grâce à la commande :
         </p>
 
         <p><code>
@@ -180,7 +180,7 @@
         </code></p>
 
         <p>
-          Avec tortoise un clique droit sur le repertoire puis SVN Update.
+          Avec tortoise, effectuez un clique droit sur le repertoire puis SVN Update.
         </p>
 
         ]]></text>
@@ -196,7 +196,7 @@
         </h2>
 
         <p>
-          Pour envoyé des modifications, via tortoise un clique sur SVN Commit ouvre une boite de dialogue dans laquelle spécifier un message pour votre commit (obligatoire).
+          Pour envoyer des modifications via tortoise, effectuez un clique sur SVN Commit, une boite de dialogue s'ouvre dans laquelle il faut spécifier un message pour votre commit (obligatoire).
         </p>
 
         
@@ -210,7 +210,7 @@
 
 
         <p>
-          En ligne de commande il existe la commande svn commit coupler à plusieurs paramètres:
+          En ligne de commande, il existe la commande svn commit couplée à plusieurs paramètres:
         </p>
 
         <p>
@@ -248,7 +248,7 @@
         <h2>Annuler des changements</h2>
 
         <p>
-          Pour annuler des changements locaux sur tortoise, il faut aller sur le fichier ou dossier sur lequelle les changements doivent être fait puis aller dans le menu contextuel et choisir revert.
+          Pour annuler des changements locaux sur tortoise, il faut aller sur le fichier ou le dossier sur lequel les changements doivent être fait, puis aller dans le menu contextuel et choisir revert.
         </p>
 
           ]]></text>
@@ -260,7 +260,7 @@
           <substep><text><![CDATA[
 
         <p>
-          Choisir ensuite les fichier ou annuler les modifications et confirmez.
+          Choisir ensuite les fichiers ou annuler les modifications et confirmez.
         </p>
 
           ]]></text>
@@ -285,13 +285,13 @@
         <h2>Revenir à un ancien commit</h2>
 
         <p>
-          Pour diverse raison lors d&apos;un développement nous pouvons avoir besoin de revenir en arrière ou simplement de relire le code. 
+          Pour diverses raisons,lors d&apos;un développement nous pouvons avoir besoin de revenir en arrière ou simplement de relire le code. 
         </p>
 
         <h3>Tortoise</h3>
 
         <p>
-          Tout d&apos;abord selectionner le fichier ou le dossier pour lequel vous souhaitez revenir en arrière.
+          Tout d&apos;abord, il faut selectionner le fichier ou le dossier pour lequel vous souhaitez revenir en arrière.
           Puis afficher les logs : 
         </p>
 
@@ -304,7 +304,7 @@
           <substep><text><![CDATA[
 
         <p>
-          Après selectionné la révision vers laquelle vous souhaitez revenir et faite : Reverte to this version
+          Après vous devez selectionner la révision vers laquelle vous souhaitez revenir et selectionnez : Reverte to this version
         </p>
 
           ]]></text>
@@ -319,13 +319,13 @@
           <substep><text><![CDATA[
 
         <p>
-          En cas de conflits lisez la section sur "comment résoudre les conflits".
+          En cas de conflits, lisez la section sur "comment résoudre les conflits".
         </p>
 
         <h3>Ligne de commande</h3>
 
         <p>
-          Dans un premier temps, utilisez svn log pour voir les différents commit. Puis utilisez la commande svn div :
+          Tout d'abord, utilisez svn log pour voir les différents commit. Puis utilisez la commande svn div :
         </p>
 
           ]]></text>
@@ -349,12 +349,12 @@
           <substep><text><![CDATA[
 
 
-        <p>L&apos;étape suivante sert à vérifier si le merge entre les deux révisions va fonctionner ou pas:</p>
+        <p>L&apos;étape suivante sert à vérifier si le merge entre les deux révisions va fonctionner:</p>
 
         <p><code>svn merge --dry-run -r:4:3 http://serveur/projet
         </code></p>
 
-        <p>Si tout ce passe bien effectuez vraiment le revert et commitez le.</p>
+        <p>Si tout se passe bien, effectuez vraiment le revert et commitez le.</p>
 
         <p><code>
           svn merge -r:4:3 http://serveur/projet
@@ -388,22 +388,22 @@
 
       <h2>Résoudre les conflits</h2>
 
-        <p>Très souvent vous serrez amené à rencontré des conflits lors de commit ou d&apos;update. Notament si vous ne faite pas d&apos;update ou commit régulié.</p>
+        <p>Très souvent, vous serez amené à rencontrer des conflits lors de commit ou d&apos;update. Notamment, si vous ne faites pas d&apos;update ou commit régulié.</p>
 
       <h3>Tortoise</h3>
 
-        <p>L&apos;interface graphique de tortoise est assez pratique pour résoudre des conflits et assez simple à comprendre. Nous allons crée un conflit simple pour comprendre.</p>
+        <p>L&apos;interface graphique de tortoise est assez pratique pour résoudre des conflits et assez simple à comprendre. Nous allons créer un conflit simple pour comprendre.</p>
 
         <p>Prérequis:</p>
 
         <ul>
           <li>Avoir deux copies du projet.</li>
-          <li><p>Crées un fichier txt et commité le. (Mettez à jour la deuxième copie).</p></li>
+          <li><p>Vous allez créer un fichier txt et commitez le. (Mettez à jour la deuxième copie).</p></li>
         </ul>
 
-        <p>Nous allons maitenant ajouter un ligne dans notre fichier sans la commité. Faire la même chose avec la deuxième copie.</p>
+        <p> Maintenant, nous allons ajouter un ligne dans notre fichier sans la commiter. Faire la même chose avec la deuxième copie.</p>
 
-        <p>Maintenant commité l&apos;un des deux. Puis le second. Le second revera une erreur qui dervrai ressembler à ça: </p>
+        <p> Vous allez commiter l&apos;un des deux, puis le second. Le second renvera une erreur qui devrait ressembler à ça: </p>
 
         ]]></text>
           </substep>
@@ -415,7 +415,7 @@
 
 
       <p>
-        Nous allons donc faire un Update comme demandé.Puis selectionnée le ou les conflits. L&apos;outils de tortoise pour resoudre les conflits s&apos;ouvre alors avec d&apos;un côté le fichier distant et de l&apos;autre le votre à vous mainteanant de choisir comme il le faut les différents lignes. Les votre les leurs ou bien les deux.
+        Nous allons faire un Update comme demandé, puis nous allons selectionner le ou les conflits. L&apos;outil de tortoise pour resoudre les conflits s&apos;ouvre alors avec d&apos;un côté le fichier distant et de l&apos;autre le votre. C'est à votre tour de choisir comme il le faut les différents lignes. Les votre, les leurs ou bien les deux.
       </p>
 
       ]]></text>
@@ -430,13 +430,13 @@
       <substep><text><![CDATA[
 
 
-      <p>Sauvegarder puis marquer comme résolue. Enfin commité les changements. Si des fichiers temporaire subsite faite un updtate pour les effacer.</p>
+      <p>Vous allez le sauvegarder puis le marquer comme résolue. Enfin vous allez commiter les changements. Si des fichiers temporaires subsitent, faites un updtate pour les effacer.</p>
 
       <h3>ligne de commande</h3>
 
-      <p>De la même manière que sur windows nous allons crée un conflis sur un fichier texte.</p>
+      <p>De la même manière que sur windows, nous allons créer un conflit sur un fichier texte.</p>
 
-      <p>Après l&apos;update et la détection du conflit vous avez diverse possibilité:</p>
+      <p>Après l&apos;update et la détection du conflit, vous aller avoir diverses possibilités:</p>
 
       <ul>
         <li>p : différé</li>
@@ -457,7 +457,7 @@
 
       <h4>Automatiquement </h4>
 
-      <p>Vous avez la possibilité de choisir directement soit leurs fichiers (tc) soit le votre (mc). Pour des options plus pousser choissisez merge (m). Choissisez ce que vous souhaitez et marqué comme résolue (r)</p>
+      <p>Vous avez la possibilité de choisir directement soit leurs fichiers (tc) soit le votre (mc). Pour des options plus poussées, utiliser merge (m). Vous pouvez choisir ce que vous souhaitez et le marquer comme résolue (r)</p>
 
       ]]></text>
           </substep>
@@ -469,9 +469,9 @@
 
       <h4>Manuelement</h4>
 
-      <p>Afin de régler manuelement les conflis vous devez utilisé p pour différer le traitement.</p>
+      <p>Afin de régler manuellement les conflis, vous devez utiliser "p" pour différer le traitement.</p>
 
-      <p>On constate que l&apos;update nous a rajouté tout un tas de nouveaux &quot;conf.txt&quot;. Parmi ces nouveaux, on trouve :</p>
+      <p>On constate que l&apos;update nous a rajouté tout un tas de nouveaux &quot;conf.txt&quot;. Parmis ces nouveaux fichiers, on trouve :</p>
 
       <ul>
         <li>&quot;conf.txt&quot;, le vrai, celui sous contrôle de version, celui en conflit (tous les autres ne sont pas considérés comme étant sous contrôle de version, vous pourrez vous en persuader avec les icônes, ceux qui en ont et avec un svn&nbsp;ls pour les autres) ;</li>
@@ -491,7 +491,7 @@
           <substep><text><![CDATA[
 
 
-      <p>On voit que les deux modifications sont présentes dans ce fichier. À la fois les miennes, mais aussi celles faites par le commit de la révision 76. Il est assez simple de comprendre comment les différences sont séparées :</p>
+      <p>On voit que les deux modifications sont présentes dans ce fichier. À la fois les votre, mais aussi celles faites par le commit de la révision 76. Il est assez simple de comprendre comment les différences sont séparées :</p>
 
       <ul>
         <li>tout ce qui est entre &quot;&lt;&lt;&lt;&lt;&lt;&lt;&lt; .mine&quot; et &quot;=======&quot; sont mes modifications ;</li>
@@ -519,13 +519,13 @@
 
       <h2>Les branches</h2>
 
-        <p>Maintenant que l&apos;on sait utilisé les commandes basique de SVN, nous allons voir comment l&apos;utiliser. Dans ce chapitre on va voir le principe des branches.</p>
+        <p>Maintenant que l&apos;on sait utiliser les commandes basiques de SVN, nous allons voir comment les utiliser. Dans ce chapitre on va voir le principe des branches.</p>
 
-        <h3>Pourquoi utilisé les branches ? </h3>
+        <h3>Pourquoi utiliser les branches ? </h3>
 
-        <p>Les branches permettent de faire une sauvegarde à un instant T. par exemple pour garder un version stable ou encore reparer un bug sans pour autant vérolé le proogramme. ça permet un sandbox et une meilleur séparation des modules.<br><br>
+        <p>Les branches permettent de faire une sauvegarde à un instant T. Par exemple, pour garder un version stable ou encore réparer un bug sans pour autant véroler le proogramme. çela permet un sandbox et une meilleure séparation des modules.<br><br>
 
-        Sur SVN un workflow habituel est de crée de base trois branches</p>
+        Sur SVN un workflow habituel est de créer de base trois dossiers: </p>
         <ul>
           <li>trunk </li>
           <li>tags</li>
@@ -540,38 +540,38 @@
 
         <h3>Comprendre les branches.</h3>
 
-        <p>En géneral on crée une nouvelle branche à partir de la branche trunk (la dernière version). </p>
+        <p>En géneral on créer une nouvelle branche à partir de la branche trunk (la dernière version). </p>
 
-        <p>Prenons un exemple simple, Vous souhaiter ajouter une page CV à votre siteInternet mais vous ne souhaitez pas qu&apos;elle soit sur le version de devellopement avant qu&apos;elle soit terminer. </p>
+        <p>Prenons un exemple simple, Vous souhaitez ajouter une page CV à votre siteInternet mais vous ne souhaitez pas qu&apos;elle soit sur la version de développement avant qu&apos;elle soit terminer. </p>
 
-        <p>Dans un premier temps crée un nouveau projet avec les trois dossier de base. Crée un fichier index.html à l&apos;intérieur du dossier trunk. Il nou servira de point de repère pour le suite de l&apos;exemple. Pour finir faite un commit sans oublier le add <em>.
+        <p>Dans un premier temps, vous allez créer un nouveau projet avec les trois dossiers de base. Créer un fichier index.html à l&apos;intérieur du dossier trunk. Il nous servira de point de repère pour le suite de l&apos;exemple. Pour finir, faites un commit sans oublier le add <em>.
         </em></p>
 
-        <p>Maintenant, nous allons crée un nouvelle branche à partir de trunk pour developpé notre nouvelles pages. </p>
+        <p>Maintenant, nous allons créer une nouvelle branche à partir de trunk pour développer notre nouvelle page. </p>
 
         <p><code>svn copy http://localhost/monPro/trunk http://localhost/monPro/branches/createBrancheCV -m &quot;Je crée une nouvelle branches&quot;</code></p>
 
-        <p>Ensuite faite un update pour que la branche apparaise dans votre arborescence. voila vous avez crée votre branche et vous pouvez maintenant créer votre fichier de CV, faire de commit etc. Maintenant que vous êtes content de la nouvelle page, vous souhaitez envoyé les modifications dans la branche de dévellopement. Pour ça, il existe la commande merge.</p>
+        <p>Ensuite, faites un update pour que la branche apparaise dans votre arborescence. Vous avez créé votre branche et vous pouvez maintenant créer votre fichier de CV, faire un commit etc. Maintenant, si vous etes satisfait, vous pouvez envoyer les modifications dans la branche de développement. Pour ça, il existe la commande merge.</p>
 
-        <p>Deplacer vous d&apos;abord dans votr dossier trunk</p>
+        <p>Deplacez-vous d&apos;abord dans votre dossier trunk</p>
 
         <p><code>cd ./trunk/</code></p>
 
-        <p>Puis faire un update pour être sur d&apos;avoir la dernière version.</p>
+        <p>Puis,faites un update pour être sur d&apos;avoir la dernière version.</p>
 
         <p><code>svn update
         </code></p>
 
-        <p>Enfin intégré les modifications:</p>
+        <p>Enfin, il faut que vous intégriez les modifications:</p>
 
         <p><code>svn merge --reintegrate ../branches/createBrancheCV/ 
         </code></p>
 
-        <p>Les tags fonctionnent de la même manière que les branche mais ce mette dans le dossier tags !</p>
+        <p>Les tags fonctionnent de la même manière que les branche mais se mettent dans le dossier tags !</p>
 
         <h3>Tortoise</h3>
 
-        <p>Pour crée un branche sur tortoise il suffit de ce rendre dans le menu contextuel et de selectionner Branch/Tag. Ajouter ensuite le lieu ou crée la branche et le nom par exemple ici je crée un branche &quot;maBranche&quot; dans le dossier branches.</p>
+        <p>Pour créer une branche sur tortoise, il suffit de se rendre dans le menu contextuel et de selectionner Branch/Tag. Ajouter ensuite le lieu ou créer la branche et le nom. Par exemple, ici, nous créons une branche &quot;maBranche&quot; dans le dossier branches.</p>
 
               ]]></text>
           </substep>
@@ -581,7 +581,7 @@
 
           <substep><text><![CDATA[
 
-        <p>Faite vos modification dans ce dossier et commité autant que vous le voulez. Pour faire le merge remetter vous dans le dossier trunk et dans le menu contextuel choissisez merge et suiver ces étapes! </p>
+        <p>Faite vos modification dans ce dossier et commitez autant que vous le voulez. Pour faire le merge remettez-vous dans le dossier trunk et dans le menu contextuel choissisez merge et suivez ces étapes! </p>
 
            ]]></text>
           </substep>
@@ -595,9 +595,9 @@
           </substep>
           <substep><text><![CDATA[
 
-        <p>Après prenez soit de tester le merge et commité sur le serveur ! <br><br>
+        <p>Après, prenez soin de tester le merge puis commitez le sur le serveur ! <br><br>
 
-          Les tags fonctionnent de la même manière que les branche mais ce mette dans le dossier tags !</p>
+          Les tags fonctionnent de la même manière que les branche mais se mettent dans le dossier tags !</p>
 
 
       ]]></text>
@@ -614,14 +614,14 @@
           p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
       </style> 
 
-      <h2>Les bonnes pratique</h2>
+      <h2>Les bonnes pratiques</h2>
 
       
-      <p>Pour finir, un petit points sur les bonnes pratiques à addopter.</p>
+      <p>Pour finir, un petit point sur les bonnes pratiques à adopter.</p>
 
-      <p>La plus importante de toute est surtout de commit et de mettre à jour le plus souvent possible pour éviter les conflits. </p>
+      <p>La plus importante de toute est surtout de commiter et de mettre à jour le plus souvent possible pour éviter les conflits. </p>
 
-      <p>Pour les branches comme on la vue auparavant, trois dossier de base:</p>
+      <p>Pour les branches comme on la vu auparavant, il y a trois dossiers de base:</p>
 
       <ul>
         <li>trunk</li>
@@ -629,17 +629,17 @@
         <li><p>branches</p></li>
       </ul>
 
-      <p>Dès qu&apos;on a une version stable préte pour une release, on crée un nouveau tag.</p>
+      <p>Dès qu&apos;on a une version stable préte pour une release, on créé un nouveau tag.</p>
 
-      <p>On ne dévelope jamais sur la trunk mais on crée des branches afin de crée un bac a sable pour notre dévelopement et donc d&apos;évité les betise sur la branche de developpement principal.</p>
+      <p>On ne développe jamais sur la trunk mais on créé des branches afin de créer un bac à sable pour notre développement et donc d&apos;éviter les betises sur la branche de développement principal.</p>
 
       <p>Avant de faire un merge, on nettoie au maximum le code et on vérifie que tout est fonctionnel et utile. On ne laisse donc pas d&apos;artefact de test ou de debug. </p>
 
-      <p>Après avoir merger on refait nos test pour vérifié la compatibilité enfin pour finir on commit.</p>
+      <p>Après avoir merger, on refait nos test pour vérifier la compatibilité. Puis, on commit.</p>
 
-      <p>Le commit justement essayer de mettre un message clairs pour un bon suivie de l&apos;avancement du projet et des logs propre.</p>
+      <p>Le commit justement, vous devez essayer de mettre un message clair pour avoir un bon suivi de l&apos;avancement du projet et des logs propres.</p>
 
-      <p>Un dépôt bien gerer permet:</p>
+      <p>Un dépôt bien géré permet:</p>
 
       <ul>
         <li>Possibilité d&apos;automatiser les livraisons</li>

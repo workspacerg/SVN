@@ -23,7 +23,7 @@
 
         <h2>Prérequis</h2>
  
-        <p>Pour ce tutorial nous avons choisie la dernière versions de ubuntu mais les modifications en fonctions de la distribution devrait être innexistant ou mineur.</p>
+        <p>Pour ce tutorial, nous avons choisi la dernière version de ubuntu mais les modifications en fonction de la distribution devraient être inexistantes ou mineures.</p>
 
         <p>Installation de svn : sudo apt-get install subversion</p>
 
@@ -33,7 +33,7 @@
 
         <p>Installation des outils apache : sudo apt-get install apache2-utils</p>
 
-        <p>Pour ce tutoriel nous allons utilisez svn en ligne de commande et crée le serveur en mode administré avec apache. D&apos;autre méthode sont possible mais plus complexe:</p>
+        <p>Pour ce tutoriel, nous allons utilisé svn en ligne de commande et créer le serveur en mode administré avec apache. D&apos;autres méthodes sont possibles mais plus complexes:</p>
 
         <ul>
           <li>Seul, en local, l&apos;accès au dépôt se faisant par file://dossier/projet</li>
@@ -56,26 +56,26 @@
         
         <h2>Installation</h2>
 
-        <p>Dans un premier temps créons un dossier /var/svn Celui contiendra les repertoires hébergés sur notre serveur.</p>
+        <p>Dans un premier temps, nous allons créer un dossier /var/svn . Celui-ci contiendra les repertoires hébergés sur notre serveur.</p>
 
         <p><code>sudo mkdir /var/svn</code></p>
 
         <h3>Configuration d&apos;apache</h3>
 
-        <p>La première chose à faire et ne pas oublier est de configurer apache en activant le service dav_svn.<em></em></p>
+        <p>La première chose à faire est de ne pas oublier de configurer apache en activant le service dav_svn.</p>
 
         <p><code>sudo a2enmod dav_svn</code></p>
 
-        <p>A partir de maintenant le fichier de configuration principal est : /etc/apache2/mods-enabled/dav_svn.conf. </p>
+        <p>A partir de maintenant,le fichier de configuration principal est : /etc/apache2/mods-enabled/dav_svn.conf. </p>
 
-        <p>l y a deux configuration possible :</p>
+        <p>Il y a deux configurations possibles :</p>
 
         <ul>
-          <li><p>Configurer tous les dépôts un par un, ce qui permet de gérer les autorisations dépôt par dépôt(oblige à modifier la configuration d&apos;Apache et de le relancer à chaque création de dépôt.</p></li>
-          <li><p>Configurer un répertoire parent de tous les dépôts, ce qui n&apos;impose aucune modification de la configuration apache mais ne permet pas de gerer différement les utilisateurs en fonction des projets.</p></li>
+          <li><p>Configurer tous les dépôts un par un, ce qui permet de gérer les autorisations dépôt par dépôt( cela blige à modifier la configuration d&apos;Apache et de le relancer à chaque création de dépôt).</p></li>
+          <li><p>Configurer un répertoire parent de tous les dépôts, ce qui n&apos;impose aucune modification de la configuration apache mais qui ne permet pas de gérer finement les utilisateurs en fonction des projets.</p></li>
         </ul>
 
-        <p>Pour ce tuto nous avons choisi la première option car la différence de configurations n&apos;est pas énorme par contre elle offre des avantages important notament vis a vis de la gestion des utilisateurs.</p>
+        <p>Pour ce tutorial, nous avons choisi la première option car la différence de configurations n&apos;est pas énorme par contre elle offre des avantages importants notament vis à vis de la gestion des utilisateurs.</p>
 
         <h4>configuration un par un</h4>
 
@@ -87,14 +87,14 @@
           <li><p>Adresse d&apos;accès : http://serveur/projet</p></li>
         </ul>
 
-        <p>le nom dans l&apos;adresse d&apos;accès est différente afin de bien comprendre la configuration. </p>
+        <p>Le nom dans l&apos;adresse d&apos;accès est différente afin de bien comprendre la configuration. </p>
 
-        <p>ouvrir le fichier de conf ( avec les doirt admin ):</p>
+        <p>Ouvrir le fichier de configuration (avec les droits administrateurs):</p>
 
         <p><code>sudo nano /etc/apache2/mods-enabled/dav_svn.conf 
         </code></p>
 
-        <p>et ajouter ce bloc en fin de fichier.</p>
+        <p>Puis, ajouter ce bloc à la fin du fichier.</p>
 
         <p><code>&lt;Location /projet&gt;<br>
         DAV svn<br>
@@ -112,14 +112,14 @@
           <li><p>SVNPath : répertoire du projet</p></li>
         </ul>
 
-        <p>Le reste serra détailler plus loin.</p>
+        <p>Le reste sera détaillé plus loin.</p>
 
-        <p>-&gt; relancer apache :</p>
+        <p>-&gt; Relancer apache :</p>
 
         <p><code>sudo /etc/init.d/apache2 restart
         </code></p>
 
-        <h3>crée le dépot</h3>
+        <h3>Créer le dépot</h3>
 
         <p> On crée le dépot monPro et on donne les droits d&apos;accès au dépôt uniquement à Apache: </p>
 
@@ -130,7 +130,7 @@
           sudo chown -R www-data:www-data /var/svn/projet1
         </code></p>
 
-        <p>Verifié que votre serveur fonctionne correctement dans votre navigateur http://localhost/projet/. Vous devriez obtenir quelque chose comme ça : </p>
+        <p>Verifier que votre serveur fonctionne correctement dans votre navigateur http://localhost/projet/. Vous devriez obtenir quelque chose comme ça : </p>
 
         
          ]]></text>
@@ -143,7 +143,7 @@
 
         <h3>Authentification</h3>
 
-        <p>Nous avons déjà fais le necaisaire dans apache :</p>
+        <p>Nous avons déjà fait le nécéssaire dans apache :</p>
 
         <p><code>  
           AuthType Basic<br>
@@ -152,14 +152,14 @@
           Require valid-user
         </code></p>
 
-        <p>Ces lignes permette d&apos;indiquer que qu&apos;il faut être un utilisateur valide pour accèder au projet.</p>
+        <p>Ces lignes permettent d&apos;indiquer qu&apos;il faut être un utilisateur valide pour accèder au projet.</p>
 
         <p>Puis créer, avec htpasswd, le fichier « /etc/apache2/dav_svn.passwd » pour un utilisateur, de cette manière : </p>
 
         <p><code>sudo htpasswd -cs /etc/apache2/dav_svn.passwd rgabel
         </code></p>
 
-        <p>-c permet de crée le fichier ensuite pour les nouveaux utilisateur :</p>
+        <p>-c permet de créer le fichier. Pour les nouveaux utilisateurs, on utilise :</p>
 
         <p><code>sudo htpasswd -s /etc/apache2/dav_svn.passwd rrahmani
         </code></p>
@@ -189,45 +189,45 @@
 
        <h2>Utilisation</h2>
 
-        <p>Sur une machine sur le même réseaux local ou sur le même machine crée un repertoire pour y stocké les copies des projets en cours.</p>
+        <p>Sur une machine qui est sur le même réseaux local ou sur la même machine, créer un repertoire pour y stocker les copies des projets en cours.</p>
 
-        <p>Par exemple crée un repertoir svnClient dans le repertoir Documents.</p>
+        <p>Par exemple, créer un repertoire svnClient dans le repertoire Documents.</p>
 
-        <p>Dans le terminale déplacer-vous dans svnClient :</p>
+        <p>Dans le terminal, déplacez-vous dans svnClient :</p>
 
         <p><code> cd &apos;/home/romaingabel/Documents/svnClient/&apos; 
         </code></p>
 
-        <p>Puis Récupérez votre projet sur le server</p>
+        <p>Puis, vous allez recupérer votre projet sur le server</p>
 
         <p><code>svn checkout http://serveur/projet
         </code></p>
 
-        <p>Si vous avez spécifié des droits d&apos;aministrations récupérez avec cette commande : </p>
+        <p>Si vous avez spécifié des droits d&apos;aministrations, récupérez avec cette commande : </p>
 
         <p><code>svn checkout --username nom http://serveur/projet
         </code></p>
 
-        <p>Si tout c&apos;est bien passée, un dossier monPro à été crée dans votre répertoire svnClient. </p>
+        <p>Si tout c&apos;est bien passé, un dossier monPro à été créé dans votre répertoire svnClient. </p>
 
-        <p>On va maintenant ajouter un fichier test.html. Crée le fichier avec ce que vous voulez à l&apos;intèrieur. Pour l&apos;ajoutez dans sur le serveur il faut d&apos;abord l&apos;ajouter à l&apos;index avec la commande:</p>
+        <p>On va maintenant ajouter un fichier test.html. Pour cela,  vous allez créer le fichier avec ce que vous voulez à l&apos;intèrieur. Pour l&apos;ajouter sur le serveur, il faut d&apos;abord l&apos;ajouter à l&apos;index avec la commande:</p>
 
         <p><code> svn add &lt;fichier&gt;
         </code></p>
 
-        <p>Dans la même logique pour le supprimer</p>
+        <p>Dans la même logique, pour le supprimer</p>
 
         <p><code> svn delete &lt;fichier&gt;
         </code></p>
 
-        <p>Maintenant il est temps de commité nos fichier sur le serveur pour que d&apos;autre personne puisse travailler dessus:</p>
+        <p>Maintenant, il est temps de commiter nos fichiers sur le serveur pour qu'une autre personne puisse travailler dessus:</p>
 
         <p><code>svn commit -m &quot;Message&quot;
         </code></p>
 
-        <p>Le Message est obligatoire et sert à décrire les modifications que vous envoyé sur le serveur.</p>
+        <p>Le Message est obligatoire et sert à décrire les modifications que vous envoyez sur le serveur.</p>
 
-        <p>Avant chaque modification et pour évité les conflit au maximum il est important de faire un update afin de récupérer les dernière modification du serveur:</p>
+        <p>Avant chaque modification et pour éviter les conflits au maximum, il est important de faire un update afin de récupérer les dernières modifications du serveur:</p>
 
         <p><code>svn update 
         </code></p>

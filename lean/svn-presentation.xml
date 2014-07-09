@@ -22,17 +22,19 @@
        
        <h2>Présentation</h2>
 
-        <p>Subversion (en abrégé svn) est un logiciel de gestion de versions. Il a été conçu pour remplacer CVS et s'appuie sur les mêmes concepts de dépôt centralisé et unique. Le principe de fonctionnement est très simple, il est basé sur un système client / serveur "basique".</p>
+        <p>
+          Subversion (en abrégé svn) est un logiciel de gestion de versions. Il a été conçu pour remplacer CVS et s'appuie sur les mêmes concepts de dépôt centralisé et unique. Le principe de fonctionnement est très simple, il est basé sur un système client / serveur "basique".
+        </p>
 
 
         <p>Le principe est le suivant :<br></p>
         <ul>
-          <li>le serveur garde en mémoire toutes les versions de tous les fichiers qui ont été utilisés sur lui. Ces fichiers utilisés sont les fichiers que l'on veut versionner.</li>
+          <li>Le serveur garde en mémoire toutes les versions de tous les fichiers qui ont été utilisés sur lui. Ces fichiers utilisés sont les fichiers que l'on veut versionner.</li>
           <li>Il n'est pas possible de travailler directement sur les fichiers du serveur. C'est la raison pour laquelle il faut obligatoirement un client dans le système.</li>
-          <li>le client, lui, va télécharger les fichiers  jour sur le serveur afin de pouvoir travailler dessus localement. Une fois qu'il aura fini d'apporter ses modifications, il enverra la nouvelle version des fichiers au serveur qui va les stocker pour la personne suivante qui voudrait les utiliser.</li>
+          <li>Le client, lui, va télécharger les fichiers à jour sur le serveur afin de pouvoir travailler dessus localement. Une fois qu'il aura fini d'apporter ses modifications, il enverra la nouvelle version des fichiers au serveur qui va les stocker pour la personne suivante qui les utilisera.</li>
         </ul>
       
-        <p>3 configurations possibles :</p>
+        <p>3 Configurations possibles :</p>
         <ul>
           <li>Un poste client et serveur</li>
           <li>Plusieurs postes en LAN</li>
@@ -41,7 +43,9 @@
 
        <h2>Les alternatives</h2>
 
-       <p>L’autre grand nom du versionning se nomme Git. Les serveur les plus connus sont Github et Bitbucket. La principale différence entre les deux environnements est leur architecture respective. En effet, alors que SNV est basésur une architecture centralisé, Github, lui, copie les fichiers sur chaque machine.</p>
+       <p>
+        L’autre grand nom du versionning se nomme Git. Les serveurs les plus connus sont Github et Bitbucket. La principale différence entre les deux environnements est leur architecture respective. En effet, alors que SVN est basé sur une architecture centralisé, Github, lui, copie les fichiers sur chaque machine.
+      </p>
 
         <h2>Notre déploiement</h2>
 
@@ -49,6 +53,7 @@
           Nous allons voir dans ce tutoriel, l'installation de serveur et son utilisation sur linux et sur windows.<br>
           Sur Windows nous verrons l'instalation avec visualServer et son utilisation avec tortoise. Par contre contrairement à windows sous linux nous utiliserons uniquement des lignes de commande et la mise en place avec apache.
         </p>
+
         
       ]]></text>
       </substep>
