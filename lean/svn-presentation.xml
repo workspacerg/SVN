@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tutorial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://leanforge.dev/tutorial https://github.com/HugoPoi/LeanForge/raw/master/xsd/tutotialschema.xsd">
+  <meta>
+    <software id="svn">
+      <name><![CDATA[Subversion]]></name>
+      <website href="http://subversion.apache.org"><![CDATA[Apache Subversion]]></website>
+    </software>
+    <languages>
+      <codinglang>java</codinglang>
+    </languages>
+    <plateforms>windows-linux</plateforms>
+    <categories>
+      <category>manage-sources</category>
+    </categories>
+    <keywords><![CDATA[subversion,svn,Présentation]]></keywords>
+  </meta>
+  <content lang="fr-FR">
+    <title><![CDATA[SVN : Présentation de Subversion]]></title>
+    <step name="Présentation">
+      <substep><img src="1.png" alt="Subversion" title="Subversion"/></substep>
+      <substep><text><![CDATA[
+       
+       <h2>Présentation</h2>
+
+        <p>Subversion (en abrégé svn) est un logiciel de gestion de versions. Il a été conçu pour remplacer CVS et s'appuie sur les mêmes concepts de dépôt centralisé et unique. Le principe de fonctionnement est très simple, il est basé sur un système client / serveur "basique".</p>
+
+
+        <p>Le principe est le suivant :<br></p>
+        <ul>
+          <li>le serveur garde en mémoire toutes les versions de tous les fichiers qui ont été utilisés sur lui. Ces fichiers utilisés sont les fichiers que l'on veut versionner.</li>
+          <li>Il n'est pas possible de travailler directement sur les fichiers du serveur. C'est la raison pour laquelle il faut obligatoirement un client dans le système.</li>
+          <li>le client, lui, va télécharger les fichiers  jour sur le serveur afin de pouvoir travailler dessus localement. Une fois qu'il aura fini d'apporter ses modifications, il enverra la nouvelle version des fichiers au serveur qui va les stocker pour la personne suivante qui voudrait les utiliser.</li>
+        </ul>
+      
+        <p>3 configurations possibles :</p>
+        <ul>
+          <li>Un poste client et serveur</li>
+          <li>Plusieurs postes en LAN</li>
+          <li>Le serveur et le client sont tous les deux connectés à Internet</li>
+        </ul>
+
+       <h2>Les alternatives</h2>
+
+       <p>L’autre grand nom du versionning se nomme Git. Les serveur les plus connus sont Github et Bitbucket. La principale différence entre les deux environnements est leur architecture respective. En effet, alors que SNV est basésur une architecture centralisé, Github, lui, copie les fichiers sur chaque machine.</p>
+
+        <h2>Notre déploiement</h2>
+
+        <p>
+          Nous allons voir dans ce tutoriel, l'installation de serveur et son utilisation sur linux et sur windows.<br>
+          Sur Windows nous verrons l'instalation avec visualServer et son utilisation avec tortoise. Par contre contrairement à windows sous linux nous utiliserons uniquement des lignes de commande et la mise en place avec apache.
+        </p>
+        
+      ]]></text>
+      </substep>
+    </step>
+  </content>
+</tutorial>
