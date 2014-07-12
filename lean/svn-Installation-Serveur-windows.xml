@@ -25,7 +25,11 @@
         <p>
           Afin de pouvoir créer et utiliser son serveur svn, il vous faut télécharger dans un premier temps visualSVNServer pour gérer les "repository" : <a href="http://www.visualsvn.com/server/">http://www.visualsvn.com/server/</a><<br>
           Puis, Tortoisesvn pour les utiliser :<a href="http://tortoisesvn.net/downloads">http://tortoisesvn.net/downloads</a>
-      </p>
+		</p>
+		<br>
+		<p>
+		 <b><u> Repository </u></b> : <i>Stockage centralisé et organisé de données. Ce peut être une ou plusieurs bases de données où les fichiers sont localisés en vue de leur distribution sur le réseau, ou bien un endroit directement accessible aux utilisateurs (notre cas).</i>
+		</p>
 
       ]]></text>
       </substep>
@@ -80,8 +84,8 @@
         <p>
           Comme vous le voyez, tout se fait de manière simple et graphique. Maintenant, nous allons créer un reposotiry pour tester.<br>
           Une bonne pratique consiste à créer avec les dossiers "trunck", "tags" et "branches", nous verrons pourquoi et comment les utiliser dans une autre partie.<br>
-          Enfin , on va paramètrer les accès au repertoire, pour cela cocher la case "customize permissions", puis custom...<br>
-          Ajouter soit un groupe d'ulitsateurs soit chaque utilisateur un à un (le groupe est plus rapide surtout si de nouveaux utilisateurs arrivent).
+          Enfin , nous allon paramètrer les accès au repertoire, pour cela, cocher la case "Customize permissions", puis "Custom..."<br>
+          Ajouter soit un groupe d'ulitsateurs soit chaque utilisateur un à un (le groupe est plus rapide surtout si de nouveaux utilisateurs sont susceptibles d'être ajoutés).
         </p>      
 
         ]]></text>
@@ -133,7 +137,7 @@
           <substep><text><![CDATA[
 
           <p>
-            Deux cas s'offrent à vous. Dans l&apos;adresse vous avez besoin d'entrer le lien vers votre serveur :
+            Deux cas s'offrent à vous. Dans l&apos;adresse, vous avez besoin d'entrer le lien vers votre serveur :
           </p>
           <ul>
             <li>https://localhost/svn/</li>
@@ -173,7 +177,7 @@
 
         <p>
           Exemple : <br>
-          Créer par exemple un fichier index.html, ensuite pour qu&apos;il soit prit en compte, vous devez l&apos;ajouter à l&apos;index de svn en cliquant droit -&gt; tortoise -&gt; Add . Une croix bleu apparait sur le dossier et un point d&apos;exclamation rouge sur l&apos;icone du dossier. 
+          Créer par exemple un fichier index.html, ensuite pour qu&apos;il soit prit en compte, vous devez l&apos;ajouter à l&apos;index de svn en effectuant un click droit -&gt; tortoise -&gt; Add . Une croix bleu apparaitra sur le dossier et un point d&apos;exclamation rouge sur l&apos;icone du dossier. 
         </p>
 
           ]]></text>
@@ -185,7 +189,7 @@
           <substep><text><![CDATA[ 
 
         <p>
-          Dernière étape, avec le clique droit de la souris -&gt; commit ... Rajouter un message de commuit qui explique ce que vous commiter
+          Dernière étape, avec le click droit de la souris -&gt; Commit ... Rajouter un message de commit qui explique ce que vous commitez (Utile pour le suivi d'un projet)
         </p>
 
           ]]></text>
@@ -200,7 +204,7 @@
           <substep><text><![CDATA[ 
 
         <p>
-          Si tout se passe bien un tick vert apparait et votre fichier est sur le serveur. Aller sur visual server puis actualiser la page et vous verrez que votre fichier est apparu dans le dossier trunck.
+          Si tout se passe bien un tick vert apparait et votre fichier est désormais sur le serveur. Aller sur visual server puis actualiser la page. Vous verrez que votre fichier est apparu dans le dossier trunck.
         </p>
 
         ]]></text>
