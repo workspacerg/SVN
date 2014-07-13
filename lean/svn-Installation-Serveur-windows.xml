@@ -18,12 +18,24 @@
     <title><![CDATA[SVN : Installation serveur sous Windows]]></title>
     
     <step name="Prérequis">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+                code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+                p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+                .col-md-12>ul>li{ list-style-type: none; }
+                .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
       
       <substep><text><![CDATA[
         <h2>Téléchargement des outils</h2>
 
         <p>
-          Afin de pouvoir créer et utiliser son serveur svn, il vous faut télécharger dans un premier temps visualSVNServer pour gérer les "repository" : <a href="http://www.visualsvn.com/server/">http://www.visualsvn.com/server/</a><<br>
+          Afin de pouvoir créer et utiliser son serveur svn, il vous faut télécharger dans un premier temps visualSVNServer pour gérer les "repository" : <a href="http://www.visualsvn.com/server/">http://www.visualsvn.com/server/</a><br>
           Puis, Tortoisesvn pour les utiliser :<a href="http://tortoisesvn.net/downloads">http://tortoisesvn.net/downloads</a>
 		</p>
 		<br>
@@ -37,6 +49,18 @@
     </step>
 
     <step name="Installation">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
 
       <substep><text><![CDATA[
         <h2>Installation</h2>
@@ -53,12 +77,12 @@
       </substep>
       <substep>
         <slider>
-          <img src="1.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
-          <img src="2.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
-          <img src="3.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
-          <img src="4.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
-          <img src="5.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
-          <img src="6.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/1.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/2.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/3.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/4.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/5.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/6.png" alt="Ensemble d'mage de l'installation" title="visualsvnserver installation"/>
         </slider>
       </substep>
       <substep><text><![CDATA[
@@ -73,10 +97,10 @@
       </substep>
       <substep>
         <slider>
-          <img src="7.png" alt="Ajout d'utilisateur" title="visualsvnserver"/>
-          <img src="8.png" alt="Ajout d'utilisateur" title="visualsvnserver"/>
-          <img src="9.png" alt="Ajout de groupe" title="visualsvnserver"/>
-          <img src="10.png" alt="Ajout de groupe" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/7.png" alt="Ajout d'utilisateur" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/8.png" alt="Ajout d'utilisateur" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/9.png" alt="Ajout de groupe" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/10.png" alt="Ajout de groupe" title="visualsvnserver"/>
         </slider>
       </substep>
       <substep><text><![CDATA[
@@ -92,15 +116,27 @@
       </substep>
       <substep>
         <slider>
-          <img src="11.png" alt="Création de repo" title="visualsvnserver"/>
-          <img src="12.png" alt="Création de repo" title="visualsvnserver"/>
-          <img src="13.png" alt="Création de repo" title="visualsvnserver"/>
-          <img src="14.png" alt="Création de repo" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/11.png" alt="Création de repo" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/12.png" alt="Création de repo" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/13.png" alt="Création de repo" title="visualsvnserver"/>
+          <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/14.png" alt="Création de repo" title="visualsvnserver"/>
         </slider>
       </substep>
        </step>
 
     <step name="Utilisation basique">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
 
       <substep><text><![CDATA[
         <h2>Utilisation avec tortoise</h2>
@@ -112,7 +148,7 @@
           ]]></text>
           </substep>
           <substep>
-            <img src="16.png" alt="Menu contextuel" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/16.png" alt="Menu contextuel" title="tortoise"/>
           </substep>
 
           <substep><text><![CDATA[
@@ -131,7 +167,7 @@
           ]]></text>
           </substep>
           <substep>
-            <img src="17.png" alt="svn checkout" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/17.png" alt="svn checkout" title="tortoise"/>
           </substep>
 
           <substep><text><![CDATA[
@@ -152,7 +188,7 @@
           ]]></text>
           </substep>
           <substep>
-            <img src="18.png" alt="svn checkout" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/18.png" alt="svn checkout" title="tortoise"/>
           </substep>
 
           <substep><text><![CDATA[
@@ -183,7 +219,7 @@
           ]]></text>
           </substep>
           <substep>
-            <img src="19.png" alt="svn checkout" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/19.png" alt="svn checkout" title="tortoise"/>
           </substep>
 
           <substep><text><![CDATA[ 
@@ -196,8 +232,8 @@
           </substep>
           <substep>
           <slider>
-              <img src="20.png" alt="Commit" title="visualsvnserver installation"/>
-              <img src="21.png" alt="Message de commit" title="visualsvnserver installation"/>
+              <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/20.png" alt="Commit" title="visualsvnserver installation"/>
+              <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/21.png" alt="Message de commit" title="visualsvnserver installation"/>
           </slider>
           </substep>
 
@@ -210,7 +246,7 @@
         ]]></text>
           </substep>
           <substep>
-            <img src="22.png" alt="svn checkout" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/22.png" alt="svn checkout" title="tortoise"/>
           </substep>
           
       <substep><text><![CDATA[
@@ -225,7 +261,7 @@
           ]]></text>
           </substep>
           <substep>
-            <img src="23.png" alt="svn checkout" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-Installation-Serveur-windows/23.png" alt="svn checkout" title="tortoise"/>
           </substep>
           
       <substep><text><![CDATA[

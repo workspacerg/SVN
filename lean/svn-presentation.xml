@@ -17,7 +17,19 @@
   <content lang="fr-FR">
     <title><![CDATA[SVN : Présentation de Subversion]]></title>
     <step name="Présentation">
-      <substep><img src="1.png" alt="Subversion" title="Subversion"/></substep>
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            </style>
+            
+        ]]></text>
+        </substep>
+        
+
+      <substep><img src="http://webbdoger93.free.fr/lean/svn-presentation/2.jpg" alt="Subversion" title="Subversion"/></substep>
       <substep><text><![CDATA[
        
        <h2>Présentation</h2>
@@ -33,7 +45,7 @@
           <li>Il n'est pas possible de travailler directement sur les fichiers du serveur. C'est la raison pour laquelle il faut obligatoirement un client dans le système.</li>
           <li>Le client, lui, va télécharger les fichiers à jour sur le serveur afin de pouvoir travailler dessus localement. Une fois qu'il aura fini d'apporter ses modifications, il enverra la nouvelle version des fichiers au serveur qui va les stocker pour la prochaine personne qui les utilisera.</li>
         </ul>
-      
+      <br>
         <p>3 Configurations possibles :</p>
         <ul>
           <li>Un poste client et serveur</li>

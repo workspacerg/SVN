@@ -18,6 +18,18 @@
     <title><![CDATA[SVN : Installation serveur sous Linux]]></title>
     
     <step name="Prérequis">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
 
       <substep><text><![CDATA[
 
@@ -46,13 +58,20 @@
     </step>
 
     <step name="Installation">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
 
       <substep><text><![CDATA[
-
-   <style type="text/css"> 
-      code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
-      p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
-   </style> 
         
         <h2>Installation</h2>
 
@@ -136,7 +155,7 @@
          ]]></text>
           </substep>
           <substep>
-            <img src="1.png" alt="Menu contextuel" title="tortoise"/>
+            <img src="http://webbdoger93.free.fr/lean/svn-installation-Serveur-linux/1.png" alt="Menu contextuel" title="tortoise"/>
           </substep>
 
           <substep><text><![CDATA[
@@ -179,13 +198,20 @@
     </step>
 
     <step name="Utilisation Basique">
+        
+        <substep><text><![CDATA[
+            
+            <style type="text/css">
+            code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
+            p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
+            .col-md-12>ul>li{ list-style-type: none; }
+            .col-md-12 img {display: block; margin: auto; width: 45%;}
+            </style>
+            
+        ]]></text>
+        </substep>
 
       <substep><text><![CDATA[
-
-       <style type="text/css"> 
-          code {font:1em 'andale mono', 'lucida console', monospace; line-height:1.5;font-family: Menlo, monospace; font-size:90%;}
-          p > code {display: block; padding:0.4em 0.4em; background:#e1e9ed; color: black; }
-       </style> 
 
        <h2>Utilisation</h2>
 
